@@ -3,12 +3,13 @@ package main
 import (
 	"context"
 	"fmt"
-	m "github.com/Makovey/chat-server/pkg/chat/v1"
+	"log"
+	"net"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	"log"
-	"net"
+	m "github.com/Makovey/chat-server/pkg/chat/v1"
 )
 
 const grpcPort = 3001
